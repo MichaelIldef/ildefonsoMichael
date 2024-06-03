@@ -1,6 +1,19 @@
 body {
 font-family: Arial, sans-serif;
 }
+#me {
+width: 100px;
+
+}
 ul {
 list-style-type: none;
+}
+
+
+
+
+#contents {
+background-color: black;
+width: 200px;
+height: 200px;
 }
