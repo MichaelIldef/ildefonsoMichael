@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div Layout</title>
+<style>
+  .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .div1, .div2, .div3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+  }
+
+  .div1 {
+    top: 0;
+    left: 0;
+  }
+
+  .div2 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .div3 {
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="div1">1</div>
+  <div class="div2">2</div>
+  <div class="div3">3</div>
+</div>
+
+</body>
+</html>
