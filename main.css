@@ -23,6 +23,7 @@ height: 500px;
     position: relative;
     width: 200px;
     height: 200px;
+    border: 2px solid green;
   }
   
   #navDiv, #introduction, #contents {
