@@ -50,7 +50,7 @@ height: 500px;
     position: absolute;
     margin-top: 100px;
     top: 0;
-    left: 0;/*calc(100% + 40px); /* Adjusted left value */
+    left: 50%;/*calc(100% + 40px); /* Adjusted left value */
     transform: translate(-50%, 0) scale(1.5);
   }
   
