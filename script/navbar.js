@@ -18,12 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
             });
+            
 
-            // Add event listener for the toggle button
-            const navToggle = document.getElementById('nav-toggle');
-            navToggle.addEventListener('click', () => {
-                document.getElementById('nav-links').classList.toggle('show');
-            });
         })
         .catch(error => console.error('Error loading navbar:', error));
 });
