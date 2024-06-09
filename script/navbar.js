@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 else if(link.getAttribute('href') !== currentPage) {
                     link.classList.add('links');
+                    // link.style.backgroundColor = '#faebd7';
+                    // link.style.color = 'black';
                 }
-
             });
             
 

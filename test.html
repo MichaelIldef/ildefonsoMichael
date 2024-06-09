@@ -2,68 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Border Navbar</title>
-<style>body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-nav {
-  background-color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  position: relative;
-  padding: 10px 0;
-}
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  position: relative;
-  padding: 10px 0;
-  overflow: hidden;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #ffcc00;
-  transition: width 0.4s ease, left 0.4s ease;
-}
-
-nav a:hover::after,
-nav a:focus::after {
-  width: 100%;
-  left: 0;
-}
-
-#content {
-  padding: 20px;
-}
-
-</style>    
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/darkMode.css">
+    <title>Home</title>
 </head>
 <body>
-    <nav>
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-    <div id="content"></div>
+    <div id="container">
+        <div>
+            <header id="introduction">
+                <img src="me.JPG" alt="My Photo" id="me">
+                <h1>Michael S. Ildefonso</h1>
+            </header>
+            <div id="navBar">
+              <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li ><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>    
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="darkMode"><input type="checkbox" name="darkMode" id="darkModeToggle" value="DarkMode">
+                    <label for="darkMode">Dark Mode</label>
+                    
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        <main id="contents">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <p>I'm Michael Ildefonso, a 2nd year college student at ACLC College of Taytay, currently pursuing a degree in Computer Science. I have a strong passion for Web Development.</p>
+        </main>
+    </div>
+    <script src="./script/navbar.js"></script>
+    <script src="./script/darkMode.js"></script>
+
 </body>
 </html>

@@ -6,10 +6,10 @@ display: flex;
 justify-content: center;
 }
 
-nav a {
+a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
     position: relative;
+    color:  black;
     padding: 0;
 }
  a {
@@ -31,7 +31,6 @@ text-align: center;
 
 
 .current-page {
-color: rgba(128, 128, 128, 0.61);
 border-bottom: #000000 solid 2px;
 cursor: pointer;
 
