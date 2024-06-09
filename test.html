@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Div Layout</title>
-<style>
-  .container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-  }
-  
-  .div1, .div2, .div3 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    text-align: center;
-    line-height: 100px;
-    font-size: 24px;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Border Navbar</title>
+<style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .div1 {
-    top: 0;
-    left: 0;
-  }
+nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
 
-  .div2 {
-    bottom: 0;
-    left: 0;
-  }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+}
 
-  .div3 {
-    top: 50%;
-    left: 90%;
-    transform: translate(-50%, -50%) scale(1.5);
-  }
-</style>
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+  left: 0;
+}
+
+#content {
+  padding: 20px;
+}
+
+</style>    
 </head>
 <body>
-
-<div class="container">
-  <div class="div1">1</div>
-  <div class="div2">2</div>
-  <div class="div3">3</div>
-</div>
-
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div id="content"></div>
 </body>
 </html>

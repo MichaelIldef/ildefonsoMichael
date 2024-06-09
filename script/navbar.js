@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.setAttribute('aria-current', 'page');
                     link.removeAttribute('href');
                 }
+                else if(link.getAttribute('href') !== currentPage) {
+                    link.classList.add('links');
+                }
+
             });
 
             // Add event listener for the toggle button
