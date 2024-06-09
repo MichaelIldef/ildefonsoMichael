@@ -19,7 +19,7 @@ body {
   display: flex;
   height: 100%;
   }
-header {
+#introduction {
   text-align: center;
   font-size: 12px;
 }

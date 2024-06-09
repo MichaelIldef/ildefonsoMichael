@@ -20,7 +20,7 @@ margin-bottom: 40px;
 a, .currentPage {
 cursor: pointer;
 }
-.currentPage {
+.current-page {
 color: rgba(128, 128, 128, 0.61);
 border-bottom: solid black 2px;
 }
