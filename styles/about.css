@@ -1,14 +1,12 @@
 html,body {
     height: 99.5%;
     margin: 0;
-    background-color: rgb(243, 237, 230);
     
   }
   body {
     font-family: Arial, sans-serif;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
-  
   }
   
   
@@ -33,7 +31,6 @@ html,body {
     }
     
   #contents {
-    background-color: rgb(221, 193, 161);
     text-align: center;
     width: 1006px;
   }
