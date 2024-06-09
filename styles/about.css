@@ -35,5 +35,5 @@ html,body {
   #contents {
     background-color: rgb(221, 193, 161);
     text-align: center;
-    flex-grow: 1;
+    width: 1006px;
   }
