@@ -21,9 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 
             });
-            
+            applyDarkModeStyles()
             })
             .catch(error => console.error('Error fetching navbar:', error));
     }
     fetchNavbar();
 });
+
+function applyDarkModeStyles() {
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    const navbars = document.querySelectorAll('.navbar');
+    console.log('Applying dark mode styles:', isDarkMode);
+    navbars.forEach(navbar => {
+        if (isDarkMode) {
+            navbar.style.backgroundColor = '#000000';
+            navbar.style.color = 'white';
+            console.log('Dark mode on');
+        } else {
+            navbar.style.backgroundColor = '#faebd7';
+            navbar.style.color = 'black';
+            console.log('Dark mode off');
+        }
+    });
+}

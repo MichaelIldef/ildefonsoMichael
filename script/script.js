@@ -50,8 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
-
     // Initial dark mode setup
     if (darkMode === 'enabled') {
         document.body.classList.add('dark-mode');

@@ -18,7 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
+    function applyDarkModeEffects() {
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        const navbars = document.querySelectorAll('.navbar');
+        console.log('Applying dark mode styles:', isDarkMode);
+        navbars.forEach(navbar => {
+            if (isDarkMode) {
+                navbar.classList.add("darkMode");
+            } else {
+                navbar.classList.remove("darkMode");
+            }
+        });
+    }
 
     // Initial dark mode setup
     if (darkMode === 'enabled') {
