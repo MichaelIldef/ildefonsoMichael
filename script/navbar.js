@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (link.getAttribute('href') === currentPage) {
                     link.classList.add('current-page');
                     link.classList.add('navbar');
-                    
                     link.setAttribute('aria-current', 'page');
                     link.removeAttribute('href');
                 }
@@ -31,14 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
 function applyDarkModeStyles() {
     const isDarkMode = document.body.classList.contains('dark-mode');
     const navbars = document.querySelectorAll('.navbar');
+    navbar.style.backgroundColor = 'transparent';
+    
     console.log('Applying dark mode styles:', isDarkMode);
     navbars.forEach(navbar => {
         if (isDarkMode) {
-            navbar.style.backgroundColor = '#000000';
             navbar.style.color = 'white';
             console.log('Dark mode on');
         } else {
-            navbar.style.backgroundColor = '#faebd7';
             navbar.style.color = 'black';
             console.log('Dark mode off');
         }

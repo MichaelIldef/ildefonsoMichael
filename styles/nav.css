@@ -1,21 +1,18 @@
 
 nav {
 padding: 0;
-margin-top: 50px;
 display: flex;
 justify-content: center;
 }
 
-a {
+.navbar {
     text-decoration: none;
     position: relative;
     color:  black;
     padding: 0;
+    font-size: larger;
 }
- a {
-padding: 0;
-font-size: larger;
-}
+
 #darkModeToggle {
   margin-left: 30%;
 }
@@ -37,10 +34,7 @@ border-bottom: #8b7b7b solid 2px;
 cursor: pointer;
 
 }
-.darkMode {
-padding-top: 50px;    
 
-}
 
 .links::after {
     content: "";

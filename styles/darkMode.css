@@ -4,13 +4,18 @@ body {
     margin: 0;
     height: 99.5%;
 
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
     }
 
     
 .dark-mode {
-background-color: black;
+background-color: rgb(59, 59, 59);
 color: white;
 margin: 0;
 height: 99.5%;
-
+font-family: Arial, sans-serif;
+overflow: hidden;
+font-family: 'Courier New', Courier, monospace;
 }

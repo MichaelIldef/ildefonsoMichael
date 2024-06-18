@@ -2,43 +2,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleCheckbox = document.getElementById('darkModeToggle');
     const darkMode = localStorage.getItem('dark-mode');
 
-    function applyDarkModeStyles() {
+    function applyDarkMode() {
         const isDarkMode = document.body.classList.contains('dark-mode');
         const navbars = document.querySelectorAll('.navbar');
-        console.log('Applying dark mode styles:', isDarkMode);
+        const contacts = document.querySelectorAll('.contact');
+
         navbars.forEach(navbar => {
+            navbar.style.backgroundColor = 'transparent';
             if (isDarkMode) {
-                navbar.style.backgroundColor = '#000000';
                 navbar.style.color = 'white';
-                console.log('Dark mode on');
-            } else {
-                navbar.style.backgroundColor = '#faebd7';
-                navbar.style.color = 'black';
-                console.log('Dark mode off');
-            }
-        });
-    }
-    function applyDarkModeEffects() {
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        const navbars = document.querySelectorAll('.navbar');
-        console.log('Applying dark mode styles:', isDarkMode);
-        navbars.forEach(navbar => {
-            if (isDarkMode) {
                 navbar.classList.add("darkMode");
             } else {
+                navbar.style.color = 'black';
                 navbar.classList.remove("darkMode");
             }
         });
+
+        contacts.forEach(contact => {
+            contact.style.color = isDarkMode ? 'white' : 'black';
+        });
+
+        console.log(`Dark mode ${isDarkMode ? 'enabled' : 'disabled'}`);
     }
 
     // Initial dark mode setup
     if (darkMode === 'enabled') {
         document.body.classList.add('dark-mode');
         toggleCheckbox.checked = true;
-        applyDarkModeStyles();
+        applyDarkMode();
     }
-
-
 
     // Toggle dark mode and update styles
     toggleCheckbox.addEventListener('change', () => {
@@ -49,6 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('dark-mode');
             localStorage.setItem('dark-mode', 'disabled');
         }
-        applyDarkModeStyles();
+        applyDarkMode();
     });
 });
