@@ -18,6 +18,7 @@ h1 {
 }
 h2 {
   font-size: 30px;
+  margin: 0;
 }
 #me {
   font-weight: 10;
@@ -27,6 +28,8 @@ h2 {
   }
 p {
   justify-content: center;
+}
+.txt {
   font-size: 20px;
 }
 #contents {
@@ -52,6 +55,27 @@ p {
 }
 .progName {
   margin: 5px;
+}
+
+/*Projects Page*/
+.mTableTxt {
+  font-size: 10px;
+}
+.productImg {
+  width: 200px;
+}
+#multiplicationTableJs {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-left: 20px;
+}
+.projectLinks {
+  line-height: 2;
+  
+}
+.projectLinks:hover {
+  text-decoration: underline;
 }
 
 /*Contact Page*/
