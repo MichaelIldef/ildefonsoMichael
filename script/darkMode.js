@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isDarkMode = document.body.classList.contains('dark-mode');
         const navbars = document.querySelectorAll('.navbar');
         const contacts = document.querySelectorAll('.contact');
+        const project = document.querySelectorAll('.projectLinks');
 
         navbars.forEach(navbar => {
             navbar.style.backgroundColor = 'transparent';
@@ -21,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
         contacts.forEach(contact => {
             contact.style.color = isDarkMode ? 'white' : 'black';
         });
+        project.forEach(projectLinks => {
+            projectLinks.style.color = isDarkMode ? 'white' : 'black';
+        })
 
         console.log(`Dark mode ${isDarkMode ? 'enabled' : 'disabled'}`);
     }
