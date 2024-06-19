@@ -37,8 +37,19 @@ p {
   margin-top: 20%;
   text-align: center;
 }
-
-
+/*Skills Page*/
+.logo {
+  width: 60px;
+  padding-top: 20px;
+}
+.flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 12px;
+}
 
 /*Contact Page*/
 #emailContainer {
@@ -70,14 +81,4 @@ p {
 a {
 color: black;
 text-decoration: none;
-}
-
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
-
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
 }
